@@ -426,6 +426,7 @@
 
 .recipes {
     background-color: #121212;
+    padding: 50px 0;
 }
 .recipes-main {
     display: flex;
@@ -434,11 +435,11 @@
 .recipes-main-body {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .recipes-main-body__breakfast {
-    width: 42rem;
+    width: 40rem;
     height: 32rem;
     background-image: url(../images/resipesback.png);
     background-repeat: no-repeat;
@@ -448,6 +449,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .breakfast-first__svg {
@@ -562,4 +564,91 @@
 }
 .buy-food-lunch__foot-item {
     display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.buy-food-lunch__foot, .buy-food-dinner__foot, .buy-food-sweets__foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-food-lunch__foot svg, .buy-food-dinner__foot svg, .buy-food-sweets__foot svg {
+    color: #fff;
+}
+
+.food-see {
+    font-size: 12px;
+    font-weight: 700;
+    color: #d8d8d8;
+}
+
+.food-date {
+    font-size: 12px;
+    font-weight: 400;
+    color: #B3B3B3;
+}
+
+.buy-food-sweets__foot span, .buy-food-sweets__foot svg {
+    color: #121212;
+}
+
+.lunch-btn, .dinner-btn, .sweets-btn {
+    font-size: 10px;
+    font-weight: 900;
+    color: #fff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 3px;
+}
+
+.lunch-btn, .dinner-btn {
+    background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.sweets-btn {
+    background-color: #000;
+}
+
+.recipes-main-title {
+    position: relative;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipes-main-title::after {
+    content: "RECIPES";
+    color: #303030;
+    font-size: 100px;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.recipes-main-title__text {
+    color: #d9d9d9;
+    font-size: 36px;
+    font-weight: 400;
+    z-index: 2;
+    letter-spacing: 4px;
+    position: relative;
+}
+.recipes-main-title__text::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #34C759;
+    position: absolute;
+    left: 50%;
+    top: 220%;
+    transform: translateX(-60%);
+}
+.recipes {
+    
+
 }
